@@ -1,6 +1,6 @@
 <?php
 function usuarioOk($usuario, $contraseña) :bool {
   
-    return ($usuario == "pepe" && $contraseña==strrev($usuario));
+    return (strlen($usuario)>=8 && $contraseña==strrev($usuario));
     
 }
